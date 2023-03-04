@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.CodeBuilding", "InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj", "{94101A5A-692C-4EC4-B276-5D1CD37B849F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.AbstractLocalizationsProvider", "InjectedLocalizations.AbstractLocalizationsProvider\InjectedLocalizations.AbstractLocalizationsProvider.csproj", "{C0508133-C09B-45A2-9424-70961A1700A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.AbstractLocalizationsProvider", "InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj", "{C0508133-C09B-45A2-9424-70961A1700A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
