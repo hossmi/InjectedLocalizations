@@ -19,11 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Tests.RightModels", "InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj", "{C179CEE2-968B-4FB6-A101-5A4704F3C3CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.CodeBuilding", "InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj", "{94101A5A-692C-4EC4-B276-5D1CD37B849F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.CodeBuilding", "InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj", "{94101A5A-692C-4EC4-B276-5D1CD37B849F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.AbstractLocalizationsProvider", "InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj", "{C0508133-C09B-45A2-9424-70961A1700A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Providers.AbstractLocalizationsProvider", "InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj", "{C0508133-C09B-45A2-9424-70961A1700A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.DefaultLocalizationsProvider", "InjectedLocalizations.Providers.DefaultLocalizationsProvider\InjectedLocalizations.Providers.DefaultLocalizationsProvider.csproj", "{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Providers.DefaultLocalizationsProvider", "InjectedLocalizations.Providers.DefaultLocalizationsProvider\InjectedLocalizations.Providers.DefaultLocalizationsProvider.csproj", "{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.ConcreteLocalizationsProvider", "InjectedLocalizations.Providers.ConcreteLocalizationsProvider\InjectedLocalizations.Providers.ConcreteLocalizationsProvider.csproj", "{A40CBD01-0804-4E0C-BB7C-A24506A06C47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40CBD01-0804-4E0C-BB7C-A24506A06C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40CBD01-0804-4E0C-BB7C-A24506A06C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40CBD01-0804-4E0C-BB7C-A24506A06C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40CBD01-0804-4E0C-BB7C-A24506A06C47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
