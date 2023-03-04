@@ -5,15 +5,16 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations", "InjectedLocalizations\InjectedLocalizations.csproj", "{A1AA3D42-C389-49D1-9194-50F99B8CE08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Contracts", "InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj", "{E297E6EC-0ACA-4E8D-B298-A729F26D4E04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Contracts", "InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj", "{E297E6EC-0ACA-4E8D-B298-A729F26D4E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Abstractions", "InjectedLocalizations.Abstractions\InjectedLocalizations.Abstractions.csproj", "{5F3ECA27-349C-4727-93A2-869884D83697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Abstractions", "InjectedLocalizations.Abstractions\InjectedLocalizations.Abstractions.csproj", "{5F3ECA27-349C-4727-93A2-869884D83697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Contracts.Building", "InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj", "{1EF7FE2A-6025-42F3-B83E-7ECA0622C2E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InjectedLocalizations.Contracts.Building", "InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj", "{1EF7FE2A-6025-42F3-B83E-7ECA0622C2E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{992764C5-46FA-4170-AA26-5A6360BA9C95}"
 	ProjectSection(SolutionItems) = preProject
 		nuget.config = nuget.config
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
