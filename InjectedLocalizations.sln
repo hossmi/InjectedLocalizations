@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.CodeB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.AbstractLocalizationsProvider", "InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj", "{C0508133-C09B-45A2-9424-70961A1700A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.DefaultLocalizationsProvider", "InjectedLocalizations.Providers.DefaultLocalizationsProvider\InjectedLocalizations.Providers.DefaultLocalizationsProvider.csproj", "{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{C0508133-C09B-45A2-9424-70961A1700A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0508133-C09B-45A2-9424-70961A1700A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0508133-C09B-45A2-9424-70961A1700A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF4F9CC-D7CD-4D13-9F76-9178EF9BADE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
