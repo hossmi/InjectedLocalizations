@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Provi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Providers.ConcreteLocalizationsProvider.Tests", "InjectedLocalizations.Providers.ConcreteLocalizationsProvider.Tests\InjectedLocalizations.Providers.ConcreteLocalizationsProvider.Tests.csproj", "{AFA3736B-71D4-4B6A-A83C-22CBFD198D37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectedLocalizations.Tests", "InjectedLocalizations.Tests\InjectedLocalizations.Tests.csproj", "{BEE9C340-0B8B-4606-9F86-84746F98BA5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{AFA3736B-71D4-4B6A-A83C-22CBFD198D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA3736B-71D4-4B6A-A83C-22CBFD198D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA3736B-71D4-4B6A-A83C-22CBFD198D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE9C340-0B8B-4606-9F86-84746F98BA5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE9C340-0B8B-4606-9F86-84746F98BA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE9C340-0B8B-4606-9F86-84746F98BA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE9C340-0B8B-4606-9F86-84746F98BA5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
