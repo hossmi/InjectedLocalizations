@@ -5,7 +5,7 @@
 		<Nullable>disable</Nullable>
 		<RootNamespace>$(MSBuildProjectName.Split('.')[0])</RootNamespace>
 
-		<ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+		<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>$(MSBuildProjectName)</Title>
@@ -21,7 +21,7 @@
 		<AssemblyVersion>0.0.1.0</AssemblyVersion>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Configurations>Debug;Release;Integration</Configurations>
+		<Configurations>Debug;Integration;Release</Configurations>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

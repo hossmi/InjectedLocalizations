@@ -8,7 +8,7 @@
 
 		<IsPackable>false</IsPackable>
 
-		<Configurations>Debug;Release;Integration</Configurations>
+		<Configurations>Debug;Integration;Release</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup>
