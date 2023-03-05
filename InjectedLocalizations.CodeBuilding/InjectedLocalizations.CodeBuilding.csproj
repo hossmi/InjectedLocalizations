@@ -31,7 +31,7 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Integration|AnyCPU'">
 		<DebugType>portable</DebugType>
-	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -45,9 +45,13 @@
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.2.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\InjectedLocalizations.Abstractions\InjectedLocalizations.Abstractions.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.Abstractions\InjectedLocalizations.Abstractions.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<ProjectReference Include="InjectedLocalizations.Abstractions" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>
