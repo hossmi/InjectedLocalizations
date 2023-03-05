@@ -44,8 +44,11 @@
 		<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<PackageReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>

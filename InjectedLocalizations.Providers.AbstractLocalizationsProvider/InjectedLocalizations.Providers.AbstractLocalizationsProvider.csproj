@@ -31,7 +31,7 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Integration|AnyCPU'">
 		<DebugType>portable</DebugType>
-	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -43,9 +43,13 @@
 		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<PackageReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>
