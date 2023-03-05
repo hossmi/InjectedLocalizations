@@ -9,7 +9,10 @@
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>$(MSBuildProjectName)</Title>
-		<Description>This package is used types generation. New classes will inherit from types of this package.</Description>
+		<Description>
+			Get localized strings through dependency injection using generated classes from your interfaces.
+			This package is used types generation. New classes will inherit from types of this package.
+		</Description>
 		<PackageProjectUrl>https://github.com/hossmi/InjectedLocalizations</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>localizations,globalization,dependency,injection</PackageTags>

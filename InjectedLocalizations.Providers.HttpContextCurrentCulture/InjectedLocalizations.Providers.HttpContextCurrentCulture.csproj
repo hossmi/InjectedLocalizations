@@ -4,6 +4,33 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>disable</Nullable>
 		<RootNamespace>$(MSBuildProjectName.Split('.')[0])</RootNamespace>
+
+		<ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>$(MSBuildProjectName)</Title>
+		<Description>
+			Get localized strings through dependency injection using generated classes from your interfaces.
+			This is the main package used tipically from the executable or main project.
+		</Description>
+		<PackageProjectUrl>https://github.com/hossmi/InjectedLocalizations</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>localizations,globalization,dependency,injection</PackageTags>
+		<Version>0.0.1</Version>
+		<FileVersion>0.0.1.0</FileVersion>
+		<AssemblyVersion>0.0.1.0</AssemblyVersion>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>none</DebugType>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -13,6 +40,13 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>

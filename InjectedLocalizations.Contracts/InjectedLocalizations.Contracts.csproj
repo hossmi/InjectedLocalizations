@@ -9,7 +9,10 @@
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>$(MSBuildProjectName)</Title>
-		<Description>Minimum package for to use InjectedLocalizations in your app.</Description>
+		<Description>
+			Get localized strings through dependency injection using generated classes from your interfaces.
+			This is the minimum package for to use InjectedLocalizations in your app.
+		</Description>
 		<PackageProjectUrl>https://github.com/hossmi/InjectedLocalizations</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>localizations,globalization,dependency,injection</PackageTags>

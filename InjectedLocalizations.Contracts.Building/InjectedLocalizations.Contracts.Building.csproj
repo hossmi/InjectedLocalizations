@@ -9,7 +9,10 @@
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>$(MSBuildProjectName)</Title>
-		<Description>Package for to build and generate classes from your app localization interfaces.</Description>
+		<Description>
+			Get localized strings through dependency injection using generated classes from your interfaces.
+			This package contains interfaces and exceptions for to build classes with localized strings.
+		</Description>
 		<PackageProjectUrl>https://github.com/hossmi/InjectedLocalizations</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>localizations,globalization,dependency,injection</PackageTags>
