@@ -7,6 +7,8 @@
 		<RootNamespace>$(MSBuildProjectName.Split('.')[0])</RootNamespace>
 
 		<IsPackable>false</IsPackable>
+
+		<Configurations>Debug;Release;Integration</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup>
