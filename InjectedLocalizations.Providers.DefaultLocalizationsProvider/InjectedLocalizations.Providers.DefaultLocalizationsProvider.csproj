@@ -43,10 +43,15 @@
 		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj" />
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<ProjectReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>

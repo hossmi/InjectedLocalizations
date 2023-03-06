@@ -7,8 +7,11 @@
 		<Configurations>Debug;Integration;Release</Configurations>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj" />
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 </Project>

@@ -31,8 +31,11 @@
 		</PackageReference>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\InjectedLocalizations.Providers.HttpContextCurrentCulture\InjectedLocalizations.Providers.HttpContextCurrentCulture.csproj" />
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.Providers.HttpContextCurrentCulture\InjectedLocalizations.Providers.HttpContextCurrentCulture.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<ProjectReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 </Project>

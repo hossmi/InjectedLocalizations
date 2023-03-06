@@ -47,10 +47,12 @@
 
 	<ItemGroup Condition="'$(Configuration)'=='Debug'">
 		<ProjectReference Include="..\InjectedLocalizations.Abstractions\InjectedLocalizations.Abstractions.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj" PrivateAssets="all" />
 		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
 		<ProjectReference Include="InjectedLocalizations.Abstractions" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" PrivateAssets="all" />
 		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 

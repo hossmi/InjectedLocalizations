@@ -32,12 +32,26 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
 	</ItemGroup>
 
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\InjectedLocalizations.Abstractions\InjectedLocalizations.Abstractions.csproj" />
+		<ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj" />
+		<ProjectReference Include="..\InjectedLocalizations.Providers.DefaultLocalizationsProvider\InjectedLocalizations.Providers.DefaultLocalizationsProvider.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations\InjectedLocalizations.csproj" PrivateAssets="all" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<ProjectReference Include="InjectedLocalizations.Abstractions" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Providers.DefaultLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations" Version="0.0.1" PrivateAssets="all" />
+	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Providers.DefaultLocalizationsProvider\InjectedLocalizations.Providers.DefaultLocalizationsProvider.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj" />
-	  <ProjectReference Include="..\InjectedLocalizations\InjectedLocalizations.csproj" />
+		<ProjectReference Include="..\InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj" />
 	</ItemGroup>
 
 </Project>
