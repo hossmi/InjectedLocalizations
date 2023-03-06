@@ -4,6 +4,7 @@ using InjectedLocalizations.Building;
 
 namespace InjectedLocalizations.Exceptions
 {
+    [Serializable]
     public class EmptyMotherClassLocalizationException : LocalizationException
     {
         public EmptyMotherClassLocalizationException(ICodeBuilder builder, Type interfaceType)

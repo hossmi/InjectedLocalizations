@@ -1,8 +1,10 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Runtime.Serialization;
 
 namespace InjectedLocalizations.Exceptions
 {
+    [Serializable]
     public class MultipleAttributesLocalizationException : ParsingLocalizationException
     {
         public MultipleAttributesLocalizationException(MemberInfo member)

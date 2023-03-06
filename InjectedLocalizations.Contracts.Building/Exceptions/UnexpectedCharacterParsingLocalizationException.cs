@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace InjectedLocalizations.Exceptions
 {
+    [Serializable]
     public class UnexpectedCharacterParsingLocalizationException : ParsingLocalizationException
     {
         public UnexpectedCharacterParsingLocalizationException(IEnumerator<char> enumerator, string buffer)

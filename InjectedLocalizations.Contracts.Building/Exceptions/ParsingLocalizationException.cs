@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 
 namespace InjectedLocalizations.Exceptions
 {
+    [Serializable]
     public class ParsingLocalizationException : LocalizationException
     {
         public ParsingLocalizationException(string message) : base(message)

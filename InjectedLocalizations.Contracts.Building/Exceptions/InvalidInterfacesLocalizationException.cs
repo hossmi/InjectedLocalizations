@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using InjectedLocalizations.Building;
 
 namespace InjectedLocalizations.Exceptions
 {
+    [Serializable]
     public class InvalidInterfacesLocalizationException : LocalizationException
     {
         public InvalidInterfacesLocalizationException(IEnumerable<IError> errors) : base(Usage.Message)

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using InjectedLocalizations.Building;
@@ -6,6 +7,7 @@ using InjectedLocalizations.Providers;
 
 namespace InjectedLocalizations.Exceptions
 {
+    [Serializable]
     public class SpecificTypeNotGeneratedLocalizationException : LocalizationException
     {
         public SpecificTypeNotGeneratedLocalizationException(ILocalizationRequest request, IEnumerable<ILocalizationsProvider> providers)
