@@ -9,10 +9,12 @@ namespace InjectedLocalizations
         static Usage()
         {
             string types;
+            IEnumerable<string> typeNames;
 
-            IEnumerable<string> typeNames = ValidReturnTypes
-                .Select(t => t.FullName);
+            ValidReturnTypes = new[] { typeof(string) };
+            LocalizationsInterfaceType = typeof(ILocalizations);
 
+            typeNames = ValidReturnTypes.Select(t => t.FullName);
             types = string.Join(", ", typeNames);
 
             Message = $@"In order to run Localization system, interface types must follow the next structure:
@@ -31,9 +33,7 @@ With respect to interface methods and properties:
         }
 
         public static string Message { get; }
-
-        public static readonly IReadOnlyCollection<Type> ValidReturnTypes = new[] { typeof(string) };
-
-        public static readonly Type LocalizationsInterfaceType = typeof(ILocalizations);
+        public static IReadOnlyCollection<Type> ValidReturnTypes { get; }
+        public static Type LocalizationsInterfaceType { get; }
     }
 }
