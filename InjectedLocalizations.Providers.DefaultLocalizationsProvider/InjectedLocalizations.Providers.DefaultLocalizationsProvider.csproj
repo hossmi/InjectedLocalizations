@@ -47,9 +47,9 @@
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
 		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>

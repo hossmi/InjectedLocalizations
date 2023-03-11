@@ -37,8 +37,8 @@
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
 		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.Providers.ConcreteLocalizationsProvider" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Providers.ConcreteLocalizationsProvider" Version="0.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj" />

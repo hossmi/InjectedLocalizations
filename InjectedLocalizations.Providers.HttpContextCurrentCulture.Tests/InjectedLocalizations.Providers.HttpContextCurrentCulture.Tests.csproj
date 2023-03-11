@@ -36,7 +36,7 @@
 		<ProjectReference Include="..\InjectedLocalizations.Providers.HttpContextCurrentCulture\InjectedLocalizations.Providers.HttpContextCurrentCulture.csproj" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
-		<ProjectReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" />
 	</ItemGroup>
 
 </Project>

@@ -44,14 +44,14 @@
 		<ProjectReference Include="..\InjectedLocalizations\InjectedLocalizations.csproj" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
-		<ProjectReference Include="InjectedLocalizations.Abstractions" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Abstractions" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" />
 		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.Providers.DefaultLocalizationsProvider" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" />
-		<ProjectReference Include="InjectedLocalizations" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Providers.DefaultLocalizationsProvider" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" />
+		<PackageReference Include="InjectedLocalizations" Version="0.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj" />

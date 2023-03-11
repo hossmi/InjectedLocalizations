@@ -48,10 +48,10 @@
 		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" PrivateAssets="all" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" PrivateAssets="all" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Contracts" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Providers.DefaultLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Providers.DefaultLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
 	</ItemGroup>
 
 
