@@ -39,7 +39,7 @@ namespace InjectedLocalizations.Building
                 throw new MissingCulturesArgumentException($"{nameof(cultureConfiguration)}.{nameof(cultureConfiguration.Cultures)}");
 
             builder
-                .Append($"namespace Utilities.Globalization.Generated")
+                .Append($"namespace {nameof(InjectedLocalizations)}.Generated")
                 .OpenBlock(out IIndentation namespaceIndentation)
                     .BuildSpecificCultureLocalizationClasses(typeRequests, providersConfiguration.Providers)
                     .BuildMotherClasses(cultureConfiguration.Default, () => Guid.NewGuid().ToString("N"))

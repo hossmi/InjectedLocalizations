@@ -61,7 +61,7 @@ namespace InjectedLocalizations.Tests
 
             builder.BuildSource(typeof(IValidLocalizations), providerConfiguration, cultureConfiguration);
 
-            builder.Buffer.Should().Be("namespace Utilities.Globalization.Generated{/*es-ES*//*en-GB*/}");
+            builder.Buffer.Should().Be("namespace InjectedLocalizations.Generated{/*es-ES*//*en-GB*/}");
             builder.Implementations.Should().HaveCount(0);
         }
 
@@ -358,15 +358,15 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 "public class Mother_pepe_EmptyLocalizations " +
-                    ": Utilities.Globalization.Implementations.AbstractLocalizations<Utilities.Globalization.Tests.RightModels.IEmptyLocalizations>" +
-                    ", Utilities.Globalization.Tests.RightModels.IEmptyLocalizations" +
+                    ": InjectedLocalizations.Abstractions.AbstractLocalizations<InjectedLocalizations.Models.IEmptyLocalizations>" +
+                    ", InjectedLocalizations.Models.IEmptyLocalizations" +
                 "{" +
                     "private static readonly System.Collections.Generic.IDictionary<System.Globalization.CultureInfo,System.Type> typeDescriptors;" +
                     "private static readonly System.Globalization.CultureInfo defaultCulture;" +
                     "static Mother_pepe_EmptyLocalizations()" +
                     "{" +
                         "typeDescriptors = new System.Collections.Generic.Dictionary<System.Globalization.CultureInfo,System.Type>();" +
-                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"en-US\"),typeof(Utilities.Globalization.Tests.Models.EmptyLocalizations));" +
+                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"en-US\"),typeof(InjectedLocalizations.Models.EmptyLocalizations));" +
                         "defaultCulture = new System.Globalization.CultureInfo(\"en-US\");" +
                     "}" +
                     "public Mother_pepe_EmptyLocalizations(System.IServiceProvider serviceProvider) : base(serviceProvider, typeDescriptors) " +
@@ -403,16 +403,16 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 "public class Mother_pepe_EmptyLocalizations " +
-                    ": Utilities.Globalization.Implementations.AbstractLocalizations<Utilities.Globalization.Tests.RightModels.IEmptyLocalizations>" +
-                    ", Utilities.Globalization.Tests.RightModels.IEmptyLocalizations" +
+                    ": InjectedLocalizations.Abstractions.AbstractLocalizations<InjectedLocalizations.Models.IEmptyLocalizations>" +
+                    ", InjectedLocalizations.Models.IEmptyLocalizations" +
                 "{" +
                     "private static readonly System.Collections.Generic.IDictionary<System.Globalization.CultureInfo,System.Type> typeDescriptors;" +
                     "private static readonly System.Globalization.CultureInfo defaultCulture;" +
                     "static Mother_pepe_EmptyLocalizations()" +
                     "{" +
                         "typeDescriptors = new System.Collections.Generic.Dictionary<System.Globalization.CultureInfo,System.Type>();" +
-                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"en-US\"),typeof(Utilities.Globalization.Tests.Models.EmptyLocalizations));" +
-                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"es-ES\"),typeof(Utilities.Globalization.Tests.Models.EmptyLocalizations));" +
+                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"en-US\"),typeof(InjectedLocalizations.Models.EmptyLocalizations));" +
+                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"es-ES\"),typeof(InjectedLocalizations.Models.EmptyLocalizations));" +
                         "defaultCulture = new System.Globalization.CultureInfo(\"en-US\");" +
                     "}" +
                     "public Mother_pepe_EmptyLocalizations(System.IServiceProvider serviceProvider) : base(serviceProvider, typeDescriptors) " +
@@ -463,8 +463,8 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 "public class Mother_pepe_EmptyLocalizations " +
-                    ": Utilities.Globalization.Implementations.AbstractLocalizations<Utilities.Globalization.Tests.RightModels.IEmptyLocalizations>" +
-                    ", Utilities.Globalization.Tests.RightModels.IEmptyLocalizations" +
+                    ": InjectedLocalizations.Abstractions.AbstractLocalizations<InjectedLocalizations.Models.IEmptyLocalizations>" +
+                    ", InjectedLocalizations.Models.IEmptyLocalizations" +
                 "{" +
                     "private static readonly System.Collections.Generic.IDictionary<System.Globalization.CultureInfo,System.Type> typeDescriptors;" +
                     "private static readonly System.Globalization.CultureInfo defaultCulture;" +
@@ -472,8 +472,8 @@ namespace InjectedLocalizations.Tests
                     "static Mother_pepe_EmptyLocalizations()" +
                     "{" +
                         "typeDescriptors = new System.Collections.Generic.Dictionary<System.Globalization.CultureInfo,System.Type>();" +
-                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"en-US\"),typeof(Utilities.Globalization.Tests.Models.EmptyLocalizations));" +
-                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"es-ES\"),typeof(Utilities.Globalization.Tests.Models.EmptyLocalizations));" +
+                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"en-US\"),typeof(InjectedLocalizations.Models.EmptyLocalizations));" +
+                        "typeDescriptors.Add(new System.Globalization.CultureInfo(\"es-ES\"),typeof(InjectedLocalizations.Models.EmptyLocalizations));" +
                         "defaultCulture = new System.Globalization.CultureInfo(\"en-US\");" +
                     "}" +
                     "public Mother_pepe_EmptyLocalizations(System.IServiceProvider serviceProvider) : base(serviceProvider, typeDescriptors) { }" +
@@ -481,8 +481,8 @@ namespace InjectedLocalizations.Tests
                 "}" +
 
                 "public class Mother_pepe_ValidLocalizations " +
-                    ": Utilities.Globalization.Implementations.AbstractLocalizations<Utilities.Globalization.Tests.RightModels.IValidLocalizations>" +
-                    ", Utilities.Globalization.Tests.RightModels.IValidLocalizations" +
+                    ": InjectedLocalizations.Abstractions.AbstractLocalizations<InjectedLocalizations.Models.IValidLocalizations>" +
+                    ", InjectedLocalizations.Models.IValidLocalizations" +
                 "{" +
                     "private static readonly System.Collections.Generic.IDictionary<System.Globalization.CultureInfo,System.Type> typeDescriptors;" +
                     "private static readonly System.Globalization.CultureInfo defaultCulture;" +
@@ -539,8 +539,8 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 "public class Mother_pepe_EmptyLocalizations " +
-                    ": Utilities.Globalization.Implementations.AbstractLocalizations<Utilities.Globalization.Tests.RightModels.IEmptyLocalizations>" +
-                        ", Utilities.Globalization.Tests.RightModels.IEmptyLocalizations" +
+                    ": InjectedLocalizations.Abstractions.AbstractLocalizations<InjectedLocalizations.Models.IEmptyLocalizations>" +
+                        ", InjectedLocalizations.Models.IEmptyLocalizations" +
                 "{" +
                     "private static readonly System.Collections.Generic.IDictionary<System.Globalization.CultureInfo,System.Type> typeDescriptors;" +
                     "private static readonly System.Globalization.CultureInfo defaultCulture;" +
@@ -577,8 +577,8 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 "public class Mother_pepe_ValidLocalizations " +
-                    ": Utilities.Globalization.Implementations.AbstractLocalizations<Utilities.Globalization.Tests.RightModels.IValidLocalizations>" +
-                    ", Utilities.Globalization.Tests.RightModels.IValidLocalizations" +
+                    ": InjectedLocalizations.Abstractions.AbstractLocalizations<InjectedLocalizations.Models.IValidLocalizations>" +
+                    ", InjectedLocalizations.Models.IValidLocalizations" +
                 "{" +
                     "private static readonly System.Collections.Generic.IDictionary<System.Globalization.CultureInfo,System.Type> typeDescriptors;" +
                     "private static readonly System.Globalization.CultureInfo defaultCulture;" +

@@ -103,7 +103,7 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 $"internal class EnglishUnitedStates_{chunk}_EmptyLocalizations " +
-                    $": Utilities.Globalization.Tests.RightModels.IEmptyLocalizations " +
+                    $": InjectedLocalizations.Models.IEmptyLocalizations " +
                     $"{{ " +
                         $"public System.Globalization.CultureInfo Culture {{ get; }} " +
                             $"= new System.Globalization.CultureInfo(\"en-US\");  " +
@@ -139,7 +139,7 @@ namespace InjectedLocalizations.Tests
 
             builder.Buffer.Should().Be(
                 $"internal class EnglishUnitedStates_{chunk}_ValidLocalizations " +
-                    $": Utilities.Globalization.Tests.RightModels.IValidLocalizations " +
+                    $": InjectedLocalizations.Models.IValidLocalizations " +
                     $"{{ " +
                         $"public System.String Some_sample_property " +
                         $"{{ " +
