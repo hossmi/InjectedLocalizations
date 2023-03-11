@@ -31,16 +31,14 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)'=='Debug'">
-		<ProjectReference Include="..\InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\InjectedLocalizations.Providers.ConcreteLocalizationsProvider\InjectedLocalizations.Providers.ConcreteLocalizationsProvider.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts\InjectedLocalizations.Contracts.csproj" />
+		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" />
+		<ProjectReference Include="..\InjectedLocalizations.Providers.ConcreteLocalizationsProvider\InjectedLocalizations.Providers.ConcreteLocalizationsProvider.csproj" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
-		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Providers.ConcreteLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
-		<ProjectReference Include="InjectedLocalizations.Tests.RightModels" Version="0.0.1" PrivateAssets="all" />
+		<PackageReference Include="InjectedLocalizations.Contracts" Version="0.0.1" />
+		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" />
+		<ProjectReference Include="InjectedLocalizations.Providers.ConcreteLocalizationsProvider" Version="0.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\InjectedLocalizations.Tests.RightModels\InjectedLocalizations.Tests.RightModels.csproj" />

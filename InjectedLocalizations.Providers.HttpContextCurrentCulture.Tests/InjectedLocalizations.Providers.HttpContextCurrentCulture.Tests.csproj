@@ -13,8 +13,9 @@
 
 	<ItemGroup>
 		<PackageReference Include="FluentAssertions" Version="5.10.3" />
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
 		<PackageReference Include="NSubstitute" Version="4.3.0" />
 		<PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.15">
 			<PrivateAssets>all</PrivateAssets>
@@ -32,10 +33,10 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)'=='Debug'">
-		<ProjectReference Include="..\InjectedLocalizations.Providers.HttpContextCurrentCulture\InjectedLocalizations.Providers.HttpContextCurrentCulture.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\InjectedLocalizations.Providers.HttpContextCurrentCulture\InjectedLocalizations.Providers.HttpContextCurrentCulture.csproj" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
-		<ProjectReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" PrivateAssets="all" />
+		<ProjectReference Include="InjectedLocalizations.Providers.HttpContextCurrentCulture" Version="0.0.1" />
 	</ItemGroup>
 
 </Project>

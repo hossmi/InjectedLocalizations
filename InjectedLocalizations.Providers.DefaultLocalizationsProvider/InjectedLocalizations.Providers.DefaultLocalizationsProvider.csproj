@@ -39,16 +39,14 @@
 		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" />
-	</ItemGroup>
-
 	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" />
 		<ProjectReference Include="..\InjectedLocalizations.CodeBuilding\InjectedLocalizations.CodeBuilding.csproj" PrivateAssets="all" />
 		<ProjectReference Include="..\InjectedLocalizations.Contracts.Building\InjectedLocalizations.Contracts.Building.csproj" PrivateAssets="all" />
 		<ProjectReference Include="..\InjectedLocalizations.Providers.AbstractLocalizationsProvider\InjectedLocalizations.Providers.AbstractLocalizationsProvider.csproj" PrivateAssets="all" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Integration' Or '$(Configuration)'=='Release'">
+		<PackageReference Include="JimenaTools.Extensions" Version="0.0.1" PrivateAssets="all" />
 		<ProjectReference Include="InjectedLocalizations.CodeBuilding" Version="0.0.1" PrivateAssets="all" />
 		<ProjectReference Include="InjectedLocalizations.Contracts.Building" Version="0.0.1" PrivateAssets="all" />
 		<ProjectReference Include="InjectedLocalizations.Providers.AbstractLocalizationsProvider" Version="0.0.1" PrivateAssets="all" />
